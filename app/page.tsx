@@ -23,7 +23,7 @@ import AIUseCases from './components/AIUseCases';
 import './lib/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBrain, faMobileAlt, faLaptopCode, faCheckCircle, faMapMarkerAlt, faEnvelope, faPhoneAlt, faPaperPlane, faArrowRight, faQuoteLeft, faLightbulb, faUsers, faTrophy } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faAngular, faVuejs, faNodeJs, faAws, faDocker, faPython, faJava, faPhp, faSwift, faAndroid, faFigma, faLinkedinIn, faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faAngular, faVuejs, faNodeJs, faAws, faDocker, faPython, faJava, faPhp, faSwift, faAndroid, faFigma, faLinkedinIn, faXTwitter, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 // Using local images from assets folder
 import background from './assets/background.jpg';
 import hero from './assets/bg.jpg';
@@ -1023,6 +1023,25 @@ className="w-full h-full object-cover object-top group-hover:scale-105 transitio
       {/* <CTA /> */}
 
       {/* Blog Section */}
+
+      {/* WhatsApp Float Button */}
+      <div className="fixed bottom-6 right-6 z-50">
+        <a
+          href="https://wa.me/918552948957"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center  bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 group"
+          aria-label="Chat on WhatsApp"
+        >
+          <FontAwesomeIcon 
+            icon={faWhatsapp} 
+            className="w-6 h-6" 
+          />
+          <span className="max-w-0 overflow-hidden group-hover:max-w-[100px] transition-all duration-300 ease-in-out whitespace-nowrap">
+            Chat with us
+          </span>
+        </a>
+      </div>
 
     </div>
   );
