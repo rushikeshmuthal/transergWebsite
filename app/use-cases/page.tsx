@@ -1,8 +1,9 @@
+'use client'
 import React from 'react';
 import Navbar from '@/app/components/Header';
 import UseCaseCard from '@/app/components/Use Cases/UseCaseCard';
 import { FileText, Shield, Users, File } from 'lucide-react';
-import { Button } from '@/app/components/ui/button';
+import { Button } from '../components/ui/button';
 
 export default function UseCases() {
   const useCases = [
@@ -79,9 +80,11 @@ export default function UseCases() {
             </div>
             
             <div className="mt-16 text-center">
-              <Button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all">
-                Schedule Your AI Consultation
-              </Button>
+            <Button 
+
+className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all"            onClick={() => window.open("https://calendly.com/transergllp/transerg-llp-saas-meeting", "_blank")}>
+            Schedule Your AI Consultation
+          </Button>
             </div>
           </div>
         </section>

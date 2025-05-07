@@ -55,11 +55,11 @@ const UseCaseCard = ({
           ))}
         </div>
 
-        <div className="mt-6 pl-[4.75rem]">
+        {/* <div className="mt-6 pl-[4.75rem]">
           <button className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center">
             Learn more <ChevronDown size={16} className="ml-1 rotate-[-90deg]" />
           </button>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

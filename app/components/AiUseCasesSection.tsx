@@ -4,6 +4,7 @@ import { Button } from './ui/button';
 import { FileText, FileCode, Shield, Users } from 'lucide-react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const AiUseCasesSection: React.FC = () => {
   const useCases = [
@@ -87,10 +88,12 @@ const AiUseCasesSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-right"
         >
-          <Button variant="outline" className="group">
-            View all use cases
-            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </Button>
+          <Link href="/use-cases">
+            <Button variant="outline" className="group">
+              View all use cases
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </Link>
         </motion.div>
       </div>
 

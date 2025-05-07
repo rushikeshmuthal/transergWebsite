@@ -54,10 +54,10 @@ const teamMembers = [
 
 const AboutPage = () => {
   const stats = [
-    { number: '10+', label: 'Years Experience' },
-    { number: '50+', label: 'Global Clients' },
-    { number: '100+', label: 'AI Solutions' },
-    { number: '95%', label: 'Client Satisfaction' },
+    { number: '20+', label: 'Experts Team' },
+    { number: '20+', label: 'Web apps delevired' },
+    { number: '15+', label: 'Mobile apps delevired' },
+    { number: '05+', label: 'Generative AI solutions' },
   ];
 
   const values = [

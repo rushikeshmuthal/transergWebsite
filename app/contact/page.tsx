@@ -77,7 +77,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Email Us</h4>
-                    <p className="text-gray-600">support@transergllp.com</p>
+                    <p className="text-gray-600">amit.dabe@transergllp.com</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

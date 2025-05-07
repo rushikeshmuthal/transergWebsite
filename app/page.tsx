@@ -23,7 +23,7 @@ import AIUseCases from './components/AIUseCases';
 import './lib/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBrain, faMobileAlt, faLaptopCode, faCheckCircle, faMapMarkerAlt, faEnvelope, faPhoneAlt, faPaperPlane, faArrowRight, faQuoteLeft, faLightbulb, faUsers, faTrophy } from '@fortawesome/free-solid-svg-icons';
-import { faReact, faAngular, faVuejs, faNodeJs, faAws, faDocker, faPython, faJava, faPhp, faSwift, faAndroid, faFigma, faLinkedinIn, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faAngular, faVuejs, faNodeJs, faAws, faDocker, faPython, faJava, faPhp, faSwift, faAndroid, faFigma, faLinkedinIn, faXTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 // Using local images from assets folder
 import background from './assets/background.jpg';
 import hero from './assets/bg.jpg';
@@ -313,6 +313,10 @@ export default function Home() {
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                 <Button 
                   className="bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white px-8 py-6 text-lg rounded-md shadow-lg hover:shadow-xl transition-all group"
+                  onClick={() => {
+                    const contactSection = document.getElementById('contact');
+                    contactSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
                 >
                   Get your AI Strategy
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -804,12 +808,12 @@ className="w-full h-full object-cover object-top group-hover:scale-105 transitio
             className="testimonial-swiper"
           >
             {[
-              {
-                name: "Aarav Mehta",
-                role: "Head of Business Development, B2B SaaS Firm",
-                image: "https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Indian%20male%20executive%20with%20confident%20smile%2C%20corporate%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=testimonial1&orientation=squarish",
-                quote: "\"Game-Changer for Our Sales Team\" SuperSalesMind by Transerg completely transformed our outbound strategy. We went from manual prospecting to fully automated outreach within weeks. Our reply rates tripled, and our team now spends time closing, not chasing."
-              },
+              // {
+              //   name: "Aarav Mehta",
+              //   role: "Head of Business Development, B2B SaaS Firm",
+              //   image: "https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Indian%20male%20executive%20with%20confident%20smile%2C%20corporate%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=testimonial1&orientation=squarish",
+              //   quote: "\"Game-Changer for Our Sales Team\" SuperSalesMind by Transerg completely transformed our outbound strategy. We went from manual prospecting to fully automated outreach within weeks. Our reply rates tripled, and our team now spends time closing, not chasing."
+              // },
               {
                 name: "Dr. Shweta Kulkarni",
                 role: "Founder, MedBridge Healthtech",
@@ -834,12 +838,12 @@ className="w-full h-full object-cover object-top group-hover:scale-105 transitio
                 image: "https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Indian%20male%20CTO%20with%20confident%20smile%2C%20tech%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=testimonial5&orientation=squarish",
                 quote: "\"Perfect Blend of Innovation & Execution\" From ideation to delivery, the Transerg team brought deep technical expertise and creativity to our eCommerce dashboard project. The end product was not just functional — it was beautiful and scalable."
               },
-              {
-                name: "Neha Verma",
-                role: "Product Manager, FinEdge Solutions",
-                image: "https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Indian%20female%20product%20manager%20with%20confident%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=testimonial6&orientation=squarish",
-                quote: "\"Our Go-To Tech Partner for AI & Automation\" Transerg has been instrumental in building and scaling our internal AI tools. Their ability to turn complex requirements into simple, powerful solutions is impressive. We consider them an extension of our own team."
-              }
+              // {
+              //   name: "Neha Verma",
+              //   role: "Product Manager, FinEdge Solutions",
+              //   image: "https://readdy.ai/api/search-image?query=professional%20headshot%20of%20an%20Indian%20female%20product%20manager%20with%20confident%20smile%2C%20business%20casual%20attire%2C%20neutral%20background%2C%20high%20quality%20portrait&width=100&height=100&seq=testimonial6&orientation=squarish",
+              //   quote: "\"Our Go-To Tech Partner for AI & Automation\" Transerg has been instrumental in building and scaling our internal AI tools. Their ability to turn complex requirements into simple, powerful solutions is impressive. We consider them an extension of our own team."
+              // }
             ].map((testimonial, index) => (
               <SwiperSlide key={index}>
                 <Card className="h-full border-none shadow-lg">
@@ -918,6 +922,9 @@ className="w-full h-full object-cover object-top group-hover:scale-105 transitio
                 <a href="https://x.com/TransergLLP" target='_blank' className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white hover:bg-indigo-700 transition-colors cursor-pointer">
                   <FontAwesomeIcon icon={faXTwitter} />
                 </a>
+                {/* <a href="https://www.instagram.com/supersalesmind/" target='_blank' className="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white hover:bg-indigo-700 transition-colors cursor-pointer">
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a> */}
               </div>
             </div>
             <div>

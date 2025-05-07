@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Navbar from '@/app/components/Header';
 import { Sparkles, Code, Smartphone, Shield, ArrowRight } from 'lucide-react';
 import { Button } from '@/app/components/ui/button';
+import CTA from '../components/CTA';
 
 interface ServiceCardProps {
   title: string;
@@ -160,76 +161,9 @@ function ServicesPage() {
         </section>
         
         {/* CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-          <div className="container mx-auto px-4 sm:px-6 text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="max-w-3xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Digital Transformation?</h2>
-              <p className="text-xl text-indigo-100 mb-8">
-                Join hundreds of satisfied clients who have transformed their businesses with our innovative IT solutions. Let's build something amazing together.
-              </p>
-              <Button className="bg-white text-indigo-600 hover:bg-indigo-50 font-medium px-8 py-6 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all">
-                Schedule a Consultation
-              </Button>
-            </motion.div>
-          </div>
-        </section>
+        <CTA />
       </main>
-      
-      <footer className="bg-[#111827] text-gray-300 py-16">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div>
-              <div className="flex items-center mb-6">
-                <div className="h-10 w-10 rounded-md bg-gradient-to-r from-indigo-600 to-purple-600 flex items-center justify-center text-white mr-3">
-                  <span className="font-bold">T</span>
-                </div>
-                <span className="text-2xl font-bold text-white">Transerg</span>
-              </div>
-              <p className="text-gray-400 mb-6">
-                Leading provider of AI-powered technology solutions. We help businesses leverage artificial intelligence to drive innovation and growth.
-              </p>
-              <div className="flex space-x-4">
-                <a href="#" className="h-10 w-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="text-white text-lg font-semibold mb-6">Quick Links</h3>
-              <ul className="space-y-4">
-                <li><a href="/" className="text-gray-400 hover:text-indigo-400 transition-colors">Home</a></li>
-                <li><a href="/services" className="text-indigo-400 font-medium">Services</a></li>
-                <li><a href="/use-cases" className="text-gray-400 hover:text-indigo-400 transition-colors">Use Cases</a></li>
-                <li><a href="/about" className="text-gray-400 hover:text-indigo-400 transition-colors">About Us</a></li>
-                <li><a href="/contact" className="text-gray-400 hover:text-indigo-400 transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            
-            <div>
-              <h3 className="text-white text-lg font-semibold mb-6">Our Services</h3>
-              <ul className="space-y-4">
-                <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">AI Solutions</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">Web Development</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">Mobile App Development</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors">QA and Testing</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500">
-            <p>&copy; {new Date().getFullYear()} Transerg. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+    
     </div>
   );
 }

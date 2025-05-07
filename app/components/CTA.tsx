@@ -26,7 +26,8 @@ const CTA: React.FC<CTAProps> = ({
           <Button 
             variant="outline" 
             className="border-2 border-white text-white hover:bg-indigo-700 px-8 py-6 text-lg !rounded-button whitespace-nowrap cursor-pointer"
-            onClick={() => window.open("https://calendly.com/transergllp/transerg-llp-saas-meeting", "_blank")}          >
+            onClick={() => window.open("https://calendly.com/transergllp/transerg-llp-saas-meeting", "_blank")}
+                      >
             {secondaryButtonText}
           </Button>
         </div>
